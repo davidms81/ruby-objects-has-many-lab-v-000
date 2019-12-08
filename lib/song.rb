@@ -1,6 +1,5 @@
 class Song
   attr_accessor :name, :artist
-
   @@all = []
 
   def initialize(name)
@@ -13,6 +12,7 @@ class Song
   end
 
   def artist_name
-    artist.name if artist
+    self.artist.name if artist
   end
+
 end
